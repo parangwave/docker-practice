@@ -7,7 +7,7 @@ COPY requirements.txt ./
 # docker 콘테이너 이미지가 빌드되고 있는 경로에 복사
 # 복사해야 파이썬 코드를 콘테이너 이미지에 넣을 수 있음
 
-RUN pip install -r requirements.txt --no-cache-dir --disable-pip-version-check
+RUN pip install -r requirements.txt --no-cache-dir --disable-pip-version-check --no-build-isolation
 # 복사한 파일을 설치
 
 ARG DJANGO_SETTINGS_MODULE
