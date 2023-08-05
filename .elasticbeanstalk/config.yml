@@ -1,0 +1,9 @@
+branch-defaults:
+  main:
+    environment: Jisu-pirogramming-19th-deployment-env
+
+global:
+  application_name: jisu-pirogramming-19th-deployment
+  default_platform: Docker running on 64bit Amazon Linux 2
+  default_region: ap-northeast-2
+  sc: git
